@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prime Legal Dispatch | About Us</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d8a44b",
+                        "navy": "#1a2a44",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#171512",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    animation: {
+                        'float': 'floating 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        floating: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<div class="relative flex min-h-screen flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-dark/95 backdrop-blur supports-[backdrop-filter]:bg-background-dark/60">
+<div class="container mx-auto flex h-20 items-center justify-between px-6 lg:px-10">
+<a href="index.html" class="flex items-center gap-3">
+<div class="flex h-30 w-20 items-center justify-center overflow-hidden">
+<img src="assets/prime-legal-logo.png" alt="Prime Legal Dispatch logo" />
+</div>
+<div class="flex flex-col">
+<h1 class="text-xl font-bold leading-none tracking-tight text-white">PRIME LEGAL</h1>
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Dispatch Services</p>
+</div>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="about-us.html">About Us</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="courts.html">Courts</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="contact-us.html">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex h-10 items-center justify-center rounded bg-primary px-6 text-sm font-bold text-background-dark transition-transform hover:scale-105 active:scale-95">
+                        Get Started
+                    </button>
+<button class="md:hidden text-white relative h-12 w-12 flex items-center justify-center focus:outline-none" id="mobile-menu-button">
+<div class="flex flex-col justify-between w-8 h-5 transition-all duration-300 transform" id="hamburger-icon">
+<span class="block bg-white h-1 w-full rounded-full transition-all duration-300"></span>
+<span class="block bg-white h-1 w-full rounded-full transition-all duration-300"></span>
+<span class="block bg-white h-1 w-full rounded-full transition-all duration-300"></span>
+</div>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-background-dark/60 backdrop-blur-sm z-40 hidden transition-opacity duration-300 opacity-0"></div>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed top-0 right-0 z-50 h-full w-[280px] bg-background-dark border-l border-primary/20 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
+<div class="flex flex-col h-full p-8">
+<div class="flex items-center justify-between mb-10">
+<div class="flex flex-col">
+<h2 class="text-xl font-bold text-white leading-none">PRIME LEGAL</h2>
+<p class="text-[10px] font-bold uppercase tracking-wider text-primary">Menu</p>
+</div>
+<button id="mobile-menu-close" class="text-white hover:text-primary transition-colors focus:outline-none">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6">
+<a class="text-lg font-medium text-slate-200 hover:text-primary transition-colors flex items-center gap-4 group" href="index.html">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">home</span>
+Home
+</a>
+<a class="text-lg font-medium text-slate-200 hover:text-primary transition-colors flex items-center gap-4 group" href="about-us.html">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">info</span>
+About Us
+</a>
+<a class="text-lg font-medium text-slate-200 hover:text-primary transition-colors flex items-center gap-4 group" href="services.html">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">gavel</span>
+Services
+</a>
+<a class="text-lg font-medium text-slate-200 hover:text-primary transition-colors flex items-center gap-4 group" href="courts.html">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">account_balance</span>
+Courts
+</a>
+<a class="text-lg font-medium text-slate-200 hover:text-primary transition-colors flex items-center gap-4 group" href="contact-us.html">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
+Contact Us
+</a>
+</nav>
+<div class="mt-auto pt-8 border-t border-primary/10">
+<a href="contact-us.html" class="flex h-12 w-full items-center justify-center rounded bg-primary text-sm font-bold text-background-dark transition-all hover:brightness-110 active:scale-95">
+Get Started
+</a>
+</div>
+</div>
+</div>
+<main class="flex-1">
+<section class="bg-background-light dark:bg-background-dark py-24">
+<div class="container mx-auto px-6 lg:px-10 max-w-5xl">
+<p class="text-sm font-bold uppercase tracking-[0.3em] text-primary">About Prime Legal Dispatch</p>
+<h2 class="mt-4 text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
+            “Your matters, filed on time.”
+        </h2>
+<p class="mt-6 text-lg text-slate-600 dark:text-slate-400">
+            Prime Legal Dispatch was established to close the gap between busy legal practices and the courts they rely on. Many firms battle with the strict timelines, procedures, and logistics required for issuing, filing, and serving documents. We exist to take full ownership of that process, so practitioners can focus on legal strategy while we handle the movement of their files with accuracy and urgency.
+        </p>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+            We are a specialist legal logistics partner, dedicated to court filings, document issuing, service of process, deceased estates support, and Court Online / Caselines administration. Rooted in Limpopo and operating across key courts in the region, our team combines on‑the‑ground experience with a modern, technology‑aware approach to tracking and managing every instruction.
+        </p>
+
+<div class="mt-12 grid gap-10 md:grid-cols-2">
+<div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Our Vision</h3>
+<p class="mt-4 text-slate-600 dark:text-slate-400">
+                Our vision is to become the most trusted legal dispatch partner in Limpopo and beyond — the first name attorneys think of when time, compliance, and reliability matter most. We aim to build a practice where logistics, court procedure, and client service come together seamlessly, giving firms the confidence that every matter is exactly where it needs to be, when it needs to be there.
+            </p>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Our Mission</h3>
+<p class="mt-4 text-slate-600 dark:text-slate-400">
+                Our mission is to provide high‑quality, dependable court filing and dispatch services with integrity, professionalism, and respect for every client instruction. We are committed to clear communication, transparent tracking of matters, and a hands‑on approach that treats each file as if it were our own.
+            </p>
+</div>
+</div>
+
+<div class="mt-16">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Our Values</h3>
+<div class="mt-6 grid gap-6 md:grid-cols-2">
+<div class="rounded-xl border border-primary/20 bg-background-dark/40 p-6">
+<h4 class="text-lg font-semibold text-white">Excellence</h4>
+<p class="mt-2 text-sm text-slate-300">
+                    We continuously refine our processes so that filings, services, and collections are handled with precision, consistency, and attention to detail.
+                </p>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-dark/40 p-6">
+<h4 class="text-lg font-semibold text-white">Service</h4>
+<p class="mt-2 text-sm text-slate-300">
+                    We measure our success by the peace of mind we give our clients — fast feedback, proactive updates, and realistic timeframes.
+                </p>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-dark/40 p-6">
+<h4 class="text-lg font-semibold text-white">Reliability</h4>
+<p class="mt-2 text-sm text-slate-300">
+                    Courts have strict rules and cut‑off times. Our team is structured around meeting those deadlines, even in demanding conditions.
+                </p>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-dark/40 p-6">
+<h4 class="text-lg font-semibold text-white">Respect &amp; Integrity</h4>
+<p class="mt-2 text-sm text-slate-300">
+                    We respect the sensitivity of legal documents and treat every instruction with confidentiality, honesty, and professionalism.
+                </p>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-dark/40 p-6">
+<h4 class="text-lg font-semibold text-white">Collaboration</h4>
+<p class="mt-2 text-sm text-slate-300">
+                    We work closely with attorneys, support staff, and court personnel to find practical solutions to everyday filing and dispatch challenges.
+                </p>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-dark/40 p-6">
+<h4 class="text-lg font-semibold text-white">Community</h4>
+<p class="mt-2 text-sm text-slate-300">
+                    We believe in building long‑term relationships with firms and communities, contributing to a more efficient and accessible justice system.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-primary/20 bg-background-dark py-20 px-6" id="contact">
+<div class="container mx-auto max-w-6xl">
+<div class="grid gap-12 lg:grid-cols-2">
+<div>
+<a href="index.html" class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center overflow-hidden">
+<img src="assets/prime-legal-logo.png" alt="Prime Legal Dispatch logo" class="h-8 w-8 object-contain"/>
+</div>
+<h2 class="text-2xl font-bold text-white tracking-tight">PRIME LEGAL DISPATCH</h2>
+</a>
+<p class="mt-6 max-w-md text-slate-400">
+                            Setting the standard in legal logistics. We understand that in the legal world, time and accuracy are non-negotiable. Our team is dedicated to providing swift, secure, and professional filing and serving services.
+                        </p>
+<div class="mt-10 flex gap-4">
+<a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-background-dark transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</a>
+<a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-background-dark transition-colors" href="contact-us.html">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="grid gap-8 sm:grid-cols-2">
+<div>
+<h4 class="text-lg font-bold text-white">Contact Details</h4>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<p class="text-sm font-bold text-white">Phone</p>
+<p class="text-sm text-slate-400">061 002 8699</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div>
+<p class="text-sm font-bold text-white">Support Emails</p>
+<p class="text-sm text-slate-400">admin@primelegaldispatch.co.za</p>
+<p class="text-sm text-slate-400">info@primelegaldispatch.co.za</p>
+</div>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold text-white">Company</h4>
+<ul class="mt-6 space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary" href="index.html">Home</a></li>
+<li><a class="hover:text-primary" href="about-us.html">About Us</a></li>
+<li><a class="hover:text-primary" href="services.html">Our Services</a></li>
+<li><a class="hover:text-primary" href="courts.html">Courts Covered</a></li>
+<li><a class="hover:text-primary" href="#">Terms &amp; Conditions</a></li>
+<li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-20 border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-sm text-slate-500">© 2025 Prime Legal Dispatch. All rights reserved.</p>
+<p class="text-sm text-slate-500">primelegaldispatch.co.za</p>
+</div>
+</div>
+</footer>
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/27610028699" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg transition-all hover:scale-110 animate-float" aria-label="Chat on WhatsApp">
+    <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-8 w-8">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+</div>
+<script>
+    (function () {
+        const button = document.getElementById('mobile-menu-button');
+        const closeButton = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const body = document.body;
+
+        function toggleMenu(isOpen) {
+            if (isOpen) {
+                menu.classList.remove('translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => {
+                    overlay.classList.remove('opacity-0');
+                    overlay.classList.add('opacity-100');
+                }, 10);
+                body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('translate-x-full');
+                overlay.classList.remove('opacity-100');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                }, 300);
+                body.style.overflow = '';
+            }
+        }
+
+        button.addEventListener('click', () => toggleMenu(true));
+        closeButton.addEventListener('click', () => toggleMenu(false));
+        overlay.addEventListener('click', () => toggleMenu(false));
+    })();
+</script>
+</body>
+</html>
